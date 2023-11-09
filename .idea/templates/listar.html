@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Veículos</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Página inicial</a>
+                </li>
+                <li>
+                    <a href="/cadastrar">Cadastrar</a>
+                </li>
+            </ul>
+        </nav>
+        <h2>Lista de veículos</h2>
+        <table>
+            <thead>
+                <th scope="col">Marca</th>
+                <th scope="col">Modelo</th>
+                <th scope="col">Ano</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Tipo</th>
+            </thead>
+            <tbody>
+                {% for carro in carros %}
+                <tr scope="row">
+                    <td>{{carro.marca}}</td>
+                    <td>{{carro.modelo}}</td>
+                    <td>{{carro.ano}}</td>
+                    <td>{{carro.categoria}}</td>
+                    <td>{{carro.preco}}</td>
+                    <td>{{carro.tipo}}</td>
+                    <td>
+                        <a href="/{{carro._id}}/editar">Editar</a>
+                        <a href="/{{carro._id}}/excluir">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

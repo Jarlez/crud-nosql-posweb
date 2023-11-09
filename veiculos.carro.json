@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "654c31a168c713352d14434d"
+  },
+  "marca": "Ford",
+  "modelo": "Fusion",
+  "ano": "2020",
+  "categoria": "Sedan",
+  "preco": "30000",
+  "tipo": "Novo"
+},
+{
+  "_id": {
+    "$oid": "654c31e368c713352d14434e"
+  },
+  "marca": "Honda",
+  "modelo": "Civic",
+  "ano": "2018",
+  "categoria": "Sedan",
+  "preco": "90000",
+  "tipo": "Novo"
+},
+{
+  "_id": {
+    "$oid": "654c321468c713352d14434f"
+  },
+  "marca": "Fiat",
+  "modelo": "Hilux",
+  "ano": "2022",
+  "categoria": "SUV",
+  "preco": "120000",
+  "tipo": "Semi-Novo"
+},
+{
+  "_id": {
+    "$oid": "654c32d768c713352d144350"
+  },
+  "marca": "Ford",
+  "modelo": "Ranger",
+  "ano": "2015",
+  "categoria": "Picape",
+  "preco": "250000",
+  "tipo": "Novo"
+},
+{
+  "_id": {
+    "$oid": "654c332368c713352d144351"
+  },
+  "marca": "Audi",
+  "modelo": "A3",
+  "ano": "2018",
+  "categoria": "Esportivo",
+  "preco": "100000",
+  "tipo": "Semi-Novo"
+}]

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de veículo</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Página inicial</a>
+                </li>
+                <li>
+                    <a href="/listar">Lista veículos</a>
+                </li>
+                <li>
+                    <a href="/cadastrar">Cadastrar</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h1>Cadastro</h1>
+
+        <form action="/atualizar_bd" method="post">
+            <input type="hidden" name="id" id="id" value="{{carro._id}}">
+
+            <div>
+                <label>Marca:</label>
+                <input type="text" name="marca" id="marca" value="{{carro.marca}}" />
+            </div>
+            <div>
+                <label>Modelo:</label>
+                <input type="text" name="modelo" id="modelo" value="{{carro.modelo}}" />
+            </div>
+            <div>
+                <label>Ano:</label>
+                <input type="text" name="ano" id="ano" value="{{carro.ano}}" />
+            </div>
+            <div>
+                <label>Categoria:</label>
+                <input type="text" name="categoria" id="categoria" value="{{carro.categoria}}" />
+            </div>
+            <div>
+                <label>Preço:</label>
+                <input type="text" name="preco" id="preco" value="{{carro.preco}}" />
+            </div>
+            <div>
+                <label>Tipo:</label>
+                <input name="tipo" id="tipo" value="{{carro.tipo}}" />
+            </div>
+            <input type="submit" value="Atualizar veículo">
+        </form>
+    </div>
+</body>
+
+</html>
